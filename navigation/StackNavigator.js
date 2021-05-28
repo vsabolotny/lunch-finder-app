@@ -1,8 +1,24 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
-import HomeScreen from "../screens/HomeScreen";
-import ProjectScreen from "../screens/ProjectScreen";
+import HomeScreen, {
+  screenOptions as homeScreenOptions,
+} from "../screens/HomeScreen";
+import ProjectScreen, {
+  screenOptions as projectScreenOptions,
+} from "../screens/ProjectScreen";
+import ImprintScreen, {
+  screenOptions as imprintScreenOptions,
+} from "../screens/ImprintScreen";
+import PrivacyScreen, {
+  screenOptions as privacyScreenOptions,
+} from "../screens/PrivacyScreen";
+import SettingsScreen, {
+  screenOptions as settingsScreenOptions,
+} from "../screens/SettingsScreen";
+import AddTruckScreen, {
+  screenOptions as addTruckScreenOptions,
+} from "../screens/AddTruckScreen";
 
 const Stack = createStackNavigator();
 
@@ -17,7 +33,11 @@ const screenOptionStyle = {
 const MainStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
-      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen
+        name="Home"
+        component={HomeScreen}
+        options={homeScreenOptions}
+      />
       <Stack.Screen name="Project" component={ProjectScreen} />
     </Stack.Navigator>
   );
@@ -26,9 +46,68 @@ const MainStackNavigator = () => {
 const ProjectStackNavigator = () => {
   return (
     <Stack.Navigator screenOptions={screenOptionStyle}>
-      <Stack.Screen name="Project" component={ProjectScreen} />
+      <Stack.Screen
+        name="Project"
+        component={ProjectScreen}
+        options={projectScreenOptions}
+      />
     </Stack.Navigator>
   );
 };
 
-export { MainStackNavigator, ProjectStackNavigator };
+const ImprintStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen
+        name="Imprint"
+        component={ImprintScreen}
+        options={imprintScreenOptions}
+      />
+    </Stack.Navigator>
+  );
+};
+
+const PrivacyStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen
+        name="Privacy"
+        component={PrivacyScreen}
+        options={privacyScreenOptions}
+      />
+    </Stack.Navigator>
+  );
+};
+
+const SettingsStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen
+        name="Settings"
+        component={SettingsScreen}
+        options={settingsScreenOptions}
+      />
+    </Stack.Navigator>
+  );
+};
+
+const AddTruckStackNavigator = () => {
+  return (
+    <Stack.Navigator screenOptions={screenOptionStyle}>
+      <Stack.Screen
+        name="AddTruck"
+        component={AddTruckScreen}
+        options={addTruckScreenOptions}
+      />
+    </Stack.Navigator>
+  );
+};
+
+export {
+  MainStackNavigator,
+  ProjectStackNavigator,
+  ImprintStackNavigator,
+  PrivacyStackNavigator,
+  SettingsStackNavigator,
+  AddTruckStackNavigator,
+};

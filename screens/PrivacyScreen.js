@@ -4,11 +4,11 @@ import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 
 import CustomHeaderButton from "../components/HeaderButton";
 
-const ProjectScreen = (props) => {
+const PrivacyScreen = (props) => {
   return (
     <View style={styles.container}>
       <Text style={styles.greeting}>
-        About the Lunch Finder Project
+        Data protection
       </Text>
     </View>
   );
@@ -16,7 +16,7 @@ const ProjectScreen = (props) => {
 
 export const screenOptions = navData => {
   return {
-    headerTitle: "Lunch Finder",
+    headerTitle: "Data protection",
     headerLeft: () => (
       <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
         <Item
@@ -43,4 +43,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProjectScreen;
+export default PrivacyScreen;

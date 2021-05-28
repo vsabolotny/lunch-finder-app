@@ -1,20 +1,24 @@
 import React from "react";
-
 import { createDrawerNavigator } from "@react-navigation/drawer";
 
-import { ProjectStackNavigator } from "./StackNavigator";
+import {
+  AddTruckStackNavigator,
+  ImprintStackNavigator,
+  PrivacyStackNavigator,
+  SettingsStackNavigator,
+} from "./StackNavigator";
 import TabNavigator from "./TabNavigator";
-import ImprintScreen from "../screens/ImprintScreen";
 
 const Drawer = createDrawerNavigator();
 
-const DrawerNavigator = ({ navigation }) => {
-  console.log(TabNavigator);
+const DrawerNavigator = () => {
   return (
     <Drawer.Navigator>
       <Drawer.Screen name="Home" component={TabNavigator} />
-      <Drawer.Screen name="Project" component={ProjectStackNavigator} />
-      <Drawer.Screen name="Imprint" component={ImprintScreen} />
+      <Drawer.Screen name="Imprint" component={ImprintStackNavigator} />
+      <Drawer.Screen name="Privacy" component={PrivacyStackNavigator} />
+      <Drawer.Screen name="Settings" component={SettingsStackNavigator} />
+      <Drawer.Screen name="AddTruck" component={AddTruckStackNavigator} />
     </Drawer.Navigator>
   );
 };

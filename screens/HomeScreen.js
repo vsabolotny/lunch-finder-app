@@ -1,16 +1,46 @@
 import React from "react";
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import { HeaderButtons, Item } from "react-navigation-header-buttons";
+import { TabActions } from "@react-navigation/native";
 
-const HomeScreen = ({ navigation }) => {
+import CustomHeaderButton from "../components/HeaderButton";
+
+const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.greeting}>Map with Food Trucks</Text>
-      <Button
-        title="Go to project"
-        onPress={() => navigation.navigate("Project")}
-      />
     </View>
   );
+};
+
+const jumpToAction = TabActions.jumpTo("AddTruck");
+
+export const screenOptions = (navData) => {
+  return {
+    headerTitle: "Lunch Finder",
+    headerLeft: () => (
+      <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
+        <Item
+          title="Menu"
+          iconName="ios-menu"
+          onPress={() => {
+            navData.navigation.toggleDrawer();
+          }}
+        />
+      </HeaderButtons>
+    ),
+    headerRight: () => (
+      <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
+        <Item
+          title="Menu"
+          iconName="add-outline"
+          onPress={() => {
+            navData.navigation.dispatch(jumpToAction);
+          }}
+        />
+      </HeaderButtons>
+    ),
+  };
 };
 
 const styles = StyleSheet.create({
@@ -21,7 +51,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   greeting: {
-    fontFamily: "open-sans-bold",
+    fontFamily: "open-sans",
   },
 });
 

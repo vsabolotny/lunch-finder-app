@@ -1,10 +1,7 @@
 import React, { useState } from "react";
-import { Asset } from "expo-asset";
 import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
-import { MainStackNavigator } from "./navigation/StackNavigator";
-import BottomTabNavigator from "./navigation/TabNavigator";
 import DrawerNavigator from "./navigation/DrawerNavigator";
 
 const fetchFonts = () => {

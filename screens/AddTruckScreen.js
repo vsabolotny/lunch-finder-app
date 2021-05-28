@@ -1,22 +1,20 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { HeaderButtons, Item } from 'react-navigation-header-buttons';
+import { HeaderButtons, Item } from "react-navigation-header-buttons";
 
 import CustomHeaderButton from "../components/HeaderButton";
 
-const ProjectScreen = (props) => {
+const AddTruckScreen = (props) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.greeting}>
-        About the Lunch Finder Project
-      </Text>
+      <Text style={styles.greeting}>Add a Truck</Text>
     </View>
   );
 };
 
-export const screenOptions = navData => {
+export const screenOptions = (navData) => {
   return {
-    headerTitle: "Lunch Finder",
+    headerTitle: "Add a Truck",
     headerLeft: () => (
       <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
         <Item
@@ -27,7 +25,7 @@ export const screenOptions = navData => {
           }}
         />
       </HeaderButtons>
-    )
+    ),
   };
 };
 
@@ -43,4 +41,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProjectScreen;
+export default AddTruckScreen;
