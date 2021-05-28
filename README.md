@@ -1,4 +1,4 @@
-# Lunch finder app
+# Lunch Finder App
 
 The app side of the [Lunch Funder Project](https://www.find-a-lunch.de/).
 
@@ -10,3 +10,6 @@ Soon there will be a blog with more background informations.
 
 # Run 
 
+# References
+## Navigation how to
+https://dev.to/easybuoy/combining-stack-tab-drawer-navigations-in-react-native-with-react-navigation-5-da
