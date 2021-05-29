@@ -13,9 +13,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -29,6 +27,8 @@
       "favicon": "./assets/favicon.png"
     },
     "description": "The app side of the Lunch Funder Project.",
-    "githubUrl": "https://github.com/vsabolotny/lunch-finder-app"
+    "githubUrl": "https://github.com/vsabolotny/lunch-finder-app",
+    "ios.config.googleMapsApiKey": "AIzaSyAKpATf07QiJ3NLZlKZiAdilmxulqMwHuE",
+    "ios.bundleIdentifier": "de.lunch.finder"
   }
 }
