@@ -19,8 +19,12 @@ Soon there will be a blog with more background informations.
 https://reactnavigation.org/
 https://dev.to/easybuoy/combining-stack-tab-drawer-navigations-in-react-native-with-react-navigation-5-da
 
-## Ionicons
+Cool animated tab bar
+https://medium.com/@baptiste.arnaud95/animated-sliding-tab-bar-in-react-native-aa3b9da02af9
 
+## Icons
+
+https://materialdesignicons.com/
 https://ionic.io/ionicons
 
 ## Testing
@@ -34,3 +38,4 @@ https://docs.expo.io/introduction/why-not-expo/
 ## Colors
 
 https://coolors.co/
+https://adoriasoft.com/mobile-app-design-14-trendy-color-schemes

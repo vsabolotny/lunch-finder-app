@@ -1,20 +1,18 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { HeaderButtons, Item } from 'react-navigation-header-buttons';
+import { HeaderButtons, Item } from "react-navigation-header-buttons";
 
 import CustomHeaderButton from "../components/HeaderButton";
 
 const ProjectScreen = (props) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.greeting}>
-        About the Lunch Finder Project
-      </Text>
+      <Text style={styles.greeting}>About the Lunch Finder Project</Text>
     </View>
   );
 };
 
-export const screenOptions = navData => {
+export const screenOptions = (navData) => {
   return {
     headerTitle: "Lunch Finder",
     headerLeft: () => (
@@ -27,7 +25,18 @@ export const screenOptions = navData => {
           }}
         />
       </HeaderButtons>
-    )
+    ),
+    headerRight: () => (
+      <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
+        <Item
+          title="Menu"
+          iconName="add-outline"
+          onPress={() => {
+            navData.navigation.dispatch(jumpToAction);
+          }}
+        />
+      </HeaderButtons>
+    ),
   };
 };
 
