@@ -6,9 +6,11 @@ Soon there will be a blog with more background informations.
 
 # Before you run the project
 
-##
+..
 
 # Run
+
+..
 
 # References
 
@@ -20,3 +22,15 @@ https://dev.to/easybuoy/combining-stack-tab-drawer-navigations-in-react-native-w
 ## Ionicons
 
 https://ionic.io/ionicons
+
+## Testing
+
+https://console.firebase.google.com/u/0/project/fir-demo-project/overview
+
+## Expo
+
+https://docs.expo.io/introduction/why-not-expo/
+
+## Colors
+
+https://coolors.co/
