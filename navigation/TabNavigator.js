@@ -37,7 +37,7 @@ const BottomTabNavigator = () => {
         name="Project"
         component={ProjectStackNavigator}
         options={{
-          tabBarLabel: "Kenne uns lernen",
+          tabBarLabel: "Lerne uns kennen",
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons
               name="account-supervisor"

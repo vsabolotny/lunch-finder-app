@@ -12,7 +12,7 @@ const AddTruckScreen = (props) => {
     {
       text: "Später",
       onPress: () => setMessage("Ich will hier einen Food Truck haben!"),
-      style: "cancel",
+      style: "default",
     },
     {
       text: "Nice!",
@@ -30,7 +30,7 @@ const AddTruckScreen = (props) => {
 
 export const screenOptions = (navData) => {
   return {
-    headerTitle: "Add a Truck",
+    headerTitle: "Food Truck einfügen",
     headerLeft: () => (
       <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
         <Item
