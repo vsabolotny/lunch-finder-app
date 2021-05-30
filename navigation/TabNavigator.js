@@ -15,7 +15,7 @@ const BottomTabNavigator = () => {
           position: "absolute",
           height: 100,
           padding: 10,
-          backgroundColor: "#FEF3E5",
+          backgroundColor: "white",
         },
       }}
     >
