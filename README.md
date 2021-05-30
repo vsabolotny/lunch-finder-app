@@ -4,13 +4,35 @@ The app side of the [Lunch Funder Project](https://www.find-a-lunch.de/).
 
 Soon there will be a blog with more background informations.
 
-# Before you run the project
+# Install
 
-..
+Install node.js 
+```
+brew install node
+```
+
+Install react-native-cli 
+```
+npm install –g react-native-cli
+```
+
+Install expo
+```
+npm install expo-cli --global
+```
+
+Install xcode, select a simulator and a command line tool.
 
 # Run
 
-..
+Start the server which will open the browser at the http://localhost:19002/.
+```
+npm start
+```
+
+Click on Run on iOS sumulator which will open the simulator and open there the app. 
+
+Alternatively, install the Expo Go App on your phone, then point with the camera on the QR code and open the app on your phone. 
 
 # References
 

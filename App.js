@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import AppLoading from "expo-app-loading";
 import * as Font from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
+
 import DrawerNavigator from "./navigation/DrawerNavigator";
 
 const fetchFonts = () => {
