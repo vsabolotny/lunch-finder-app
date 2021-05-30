@@ -7,14 +7,14 @@ import CustomHeaderButton from "../components/HeaderButton";
 const SettingsScreen = (props) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.greeting}>Settings</Text>
+      <Text style={styles.greeting}>Einstellungen</Text>
     </View>
   );
 };
 
 export const screenOptions = (navData) => {
   return {
-    headerTitle: "Settings",
+    headerTitle: "Einstellungen",
     headerLeft: () => (
       <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
         <Item

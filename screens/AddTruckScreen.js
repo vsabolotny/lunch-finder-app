@@ -16,7 +16,7 @@ const AddTruckScreen = (props) => {
     },
     {
       text: "Nice!",
-      onPress: () => console.log("OK Pressed"),
+      onPress: () => setMessage("Ich will hier einen Food Truck haben!"),
       style: "destructive",
     },
   ]);

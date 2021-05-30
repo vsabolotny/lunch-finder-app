@@ -1,22 +1,20 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { HeaderButtons, Item } from 'react-navigation-header-buttons';
+import { HeaderButtons, Item } from "react-navigation-header-buttons";
 
 import CustomHeaderButton from "../components/HeaderButton";
 
 const PrivacyScreen = (props) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.greeting}>
-        Data protection
-      </Text>
+      <Text style={styles.greeting}>Datenschutz</Text>
     </View>
   );
 };
 
-export const screenOptions = navData => {
+export const screenOptions = (navData) => {
   return {
-    headerTitle: "Data protection",
+    headerTitle: "Datenschutz",
     headerLeft: () => (
       <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
         <Item
@@ -27,7 +25,7 @@ export const screenOptions = navData => {
           }}
         />
       </HeaderButtons>
-    )
+    ),
   };
 };
 

@@ -1,20 +1,27 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import { HeaderButtons, Item } from 'react-navigation-header-buttons';
+import { HeaderButtons, Item } from "react-navigation-header-buttons";
+import { WebView } from "react-native-webview";
 
 import CustomHeaderButton from "../components/HeaderButton";
 
 const ImprintScreen = (props) => {
+  const HOST = "https://www.find-a-lunch.de/";
+
   return (
     <View style={styles.container}>
-      <Text style={styles.greeting}>Imprint</Text>
+      {/* <WebView
+        style={styles.webtext}
+        source={{ uri: HOST + "imprint/isApp" }}
+      /> */}
+      <Text>Impressum</Text>
     </View>
   );
 };
 
-export const screenOptions = navData => {
+export const screenOptions = (navData) => {
   return {
-    headerTitle: "Imprint",
+    headerTitle: "Impressum",
     headerLeft: () => (
       <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
         <Item
@@ -25,7 +32,7 @@ export const screenOptions = navData => {
           }}
         />
       </HeaderButtons>
-    )
+    ),
   };
 };
 
@@ -37,6 +44,9 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   greeting: {
+    fontFamily: "open-sans",
+  },
+  webtext: {
     fontFamily: "open-sans",
   },
 });
