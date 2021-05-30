@@ -46,10 +46,10 @@ const HomeScreen = (props) => {
       style={styles.map}
       provider={PROVIDER_GOOGLE}
       initialRegion={{
-        // latitude: 48.15913,
-        // longitude: 11.626086,
-        latitude: location.coords.latitude,
-        longitude: location.coords.longitude,
+        latitude: 48.15913,
+        longitude: 11.626086,
+        // latitude: location.coords.latitude,
+        // longitude: location.coords.longitude,
         latitudeDelta: 0.0922,
         longitudeDelta: 0.0421,
       }}

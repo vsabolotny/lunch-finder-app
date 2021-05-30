@@ -17,9 +17,6 @@
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "de.lunch.finder",
-      "config": {
-        "googleMapsApiKey": "AIzaSyAKpATf07QiJ3NLZlKZiAdilmxulqMwHuE"
-      },
       "infoPlist": {
         "NSLocationWhenInUseUsageDescription": "Lunch Finder needs your location to show available Food Trucks near you"
       }
