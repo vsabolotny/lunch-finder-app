@@ -1,5 +1,5 @@
-import React, { useState, useEffect, usePermissions } from "react";
-import { StyleSheet, Text, View, Dimensions } from "react-native";
+import React, { useState, useEffect } from "react";
+import { StyleSheet, Text, View, Dimensions, Alert } from "react-native";
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
 import { TabActions } from "@react-navigation/native";
 import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
@@ -8,17 +8,6 @@ import * as Location from "expo-location";
 import CustomHeaderButton from "../components/HeaderButton";
 
 const HomeScreen = (navigator) => {
-  const [location, setLocation] = useState(null);
-
-  useEffect(() => {
-    (async () => {
-      await Location.requestForegroundPermissionsAsync();
-      setLocation(await Location.getCurrentPositionAsync({}));
-    })();
-  }, []);
-
-  // console.log(location);
-
   return (
     <View style={styles.container}>
       <MapView

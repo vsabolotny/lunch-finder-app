@@ -1,13 +1,29 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React, { useState } from "react";
+import { StyleSheet, Text, View, Alert } from "react-native";
+import { useSafeArea } from "react-native-safe-area-context";
 import { HeaderButtons, Item } from "react-navigation-header-buttons";
 
 import CustomHeaderButton from "../components/HeaderButton";
 
 const AddTruckScreen = (props) => {
+  const [message, setMessage] = useState("Add a Truck");
+
+  Alert.alert("Kein Food Truck gefunden?", "Stelle ein Request ein", [
+    {
+      text: "Später",
+      onPress: () => setMessage("Ich will hier einen Food Truck haben!"),
+      style: "cancel",
+    },
+    {
+      text: "Nice!",
+      onPress: () => console.log("OK Pressed"),
+      style: "destructive",
+    },
+  ]);
+
   return (
     <View style={styles.container}>
-      <Text style={styles.greeting}>Add a Truck</Text>
+      <Text style={styles.greeting}>{message}</Text>
     </View>
   );
 };
